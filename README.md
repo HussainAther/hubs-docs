@@ -1,151 +1,148 @@
-# Hubs Docs
+# Hubs Documentation
 
-This repository contains documentation for Hubs and related products, including Hubs Cloud and Spoke. It provides guides for developers, contributors, and users on setting up, customizing, and troubleshooting Hubs.
+This repository contains the documentation for [Mozilla Hubs](https://hubs.mozilla.com/) — an open-source platform for shared virtual reality spaces on the web. This documentation is intended for contributors, creators, developers, and community members who want to understand, extend, or contribute to the Hubs ecosystem.
 
-The documentation is under active development. If there are any changes or updates you recommend, feel free to submit a pull request or let us know in our [Discord Server](http://discord.gg/wHmY4nd).
+📚 You can view the live version of this documentation at:  
+👉 https://hubs.mozilla.com/docs
 
-This website was created with [Docusaurus](https://docusaurus.io/). 
-
-
-# Docusaurus information 
-## What's In This Document
-
-* [Get Started in 5 Minutes](#get-started-in-5-minutes)
-* [Directory Structure](#directory-structure)
-* [Editing Content](#editing-content)
-* [Adding Content](#adding-content)
-* [Full Documentation](#full-documentation)
-
-## Get Started in 5 Minutes
-
-1. Make sure all the dependencies for the website are installed:
-
-```sh
-# Navigate to the website directory
-$ cd website
-
-# Install dependencies
-$ npm ci
-```
-2. Run your dev server:
-
-```sh
-# Start the site
-$ npm start
-```
-
-### Directory Structure
-
-Your project file structure should look something like this
-
-```
-my-docusaurus/
-  docs/
-    doc-1.md
-    doc-2.md
-    doc-3.md
-  website/
-    core/
-    node_modules/
-    pages/
-    static/
-      css/
-      img/
-    package.json
-    sidebar.json
-    siteConfig.js
-```
-
-## Editing Content
-
-### Editing an existing docs page
-
-Edit docs by navigating to `docs/` and editing the corresponding document:
-
-`docs/doc-to-be-edited.md`
-
-```markdown
----
-id: page-needs-edit
-title: This Doc Needs To Be Edited
 ---
 
-Edit me...
-```
+## 🧭 Overview
 
-For more information about docs, click [here](https://docusaurus.io/docs/en/navigation)
+This documentation includes:
 
-### Editing an existing blog post
+- Tutorials and guides for setting up and using Hubs
+- Technical documentation for Hubs architecture and components
+- Creator guides for building custom scenes and avatars
+- Details on Spoke (scene editor), Blender pipelines, and Hubs Cloud
+- Experimental features like Behavior Graphs and scripting
 
-Edit blog posts by navigating to `website/blog` and editing the corresponding post:
+The site is built using [Docusaurus](https://docusaurus.io/), a static site generator.
 
-`website/blog/post-to-be-edited.md`
-```markdown
----
-id: post-needs-edit
-title: This Blog Post Needs To Be Edited
 ---
 
-Edit me...
+## 🛠 Contributing to the Docs
+
+We welcome contributions from the community!
+
+### 📁 Cloning the repo
+
+```bash
+git clone https://github.com/mozilla/hubs-docs.git
+cd hubs-docs
+npm install
+npm run start
+````
+
+This will run a local dev server at `http://localhost:3000`.
+
+### 🌿 Creating a Branch
+
+Create a new branch for your edits:
+
+```bash
+git checkout -b my-docs-update
 ```
 
-For more information about blog posts, click [here](https://docusaurus.io/docs/en/adding-blog)
+### ✍️ Editing Documentation Pages
 
-## Adding Content
+Documentation lives in the `docs/` directory and is written in **Markdown** (`.md`) files with a **Docusaurus frontmatter block** at the top.
 
-### Adding a new docs page to an existing sidebar
+Each file includes a YAML header block that defines metadata such as the page ID, title, and sidebar ordering.
 
-1. Create the doc as a new markdown file in `/docs`, example `docs/newly-created-doc.md`:
+Example:
 
-```md
+```yaml
 ---
-id: newly-created-doc
-title: This Doc Needs To Be Edited
+id: intro-behavior-graphs
+title: Introduction to Behavior Graphs
+description: Learn how to use Behavior Graphs in Blender to add interactivity to Hubs scenes.
+sidebar_position: 1
+---
+```
+
+⚠️ **Do not remove or modify these headers unless necessary.** They are critical for Docusaurus to render the site correctly.
+
+### 🧠 Docusaurus Frontmatter Explained
+
+The section between `---` lines at the top of every Markdown file is called the **YAML frontmatter**. It defines important metadata for Docusaurus.
+
+Common fields include:
+
+| Field              | Purpose                                                      |
+| ------------------ | ------------------------------------------------------------ |
+| `id`               | Unique identifier for the page (used for linking/navigation) |
+| `title`            | The visible title of the page                                |
+| `description`      | Optional summary (used for search, SEO, etc.)                |
+| `sidebar_position` | Determines order in sidebar                                  |
+
+This YAML frontmatter **is not Markdown**, so be sure to maintain proper indentation and format.
+
 ---
 
-My new content here..
+## 🚀 Submitting a Pull Request
+
+When your edits are ready:
+
+```bash
+git add .
+git commit -m "Update documentation for behavior graphs"
+git push origin my-docs-update
 ```
 
-1. Refer to that doc's ID in an existing sidebar in `website/sidebar.json`:
+Then open a Pull Request (PR) against the `main` or appropriate working branch.
 
-```javascript
-// Add newly-created-doc to the Getting Started category of docs
-{
-  "docs": {
-    "Getting Started": [
-      "quick-start",
-      "newly-created-doc" // new doc here
-    ],
-    ...
-  },
-  ...
-}
+We recommend including screenshots (if visual) and a summary of your changes. PRs may be reviewed by community maintainers.
+
+---
+
+## 🧪 Local Preview / Development
+
+To preview your changes:
+
+```bash
+npm run start
 ```
 
-For more information about adding new docs, click [here](https://docusaurus.io/docs/en/navigation)
+The docs will be served at `http://localhost:3000` and automatically refresh on edits.
 
-## Full Documentation
+---
 
-Full documentation can be found on the [website](https://docusaurus.io/).
+## 📎 Documentation Structure
 
-## Contributing to Hubs Docs
+* `docs/` — All documentation Markdown files
+* `static/` — Images and static assets used in docs
+* `sidebars.js` — Defines sidebar structure
+* `docusaurus.config.js` — Site-level configuration
 
-We welcome contributions from the community! Here’s how you can help:
+---
 
-### 📝 Fixing Documentation  
-If you notice typos, unclear sections, or outdated information:
-1. Fork this repository.
-2. Create a new branch:  
-   ```sh
-   git checkout -b improve-docs
-   ```
-3. Make your edits.
-4. Submit a Pull Request (PR) for review.
+## 🤝 Join the Community
 
-## 📄 Adding New Docs
-To add new documentation:
+* [Hubs Discord](https://discord.gg/VvRKJmYz6w)
+* [GitHub Discussions](https://github.com/mozilla/hubs/discussions)
+* [Community Collaboration Calendar](https://github.com/mozilla/hubs/wiki)
 
-1. Create a new .md file in the docs/ folder.
-2. Update website/sidebar.json to include your new page.
-3. Open a PR for review.
+We hold weekly Community Sessions for contributors to work on the docs together — feel free to join!
+
+---
+
+## 🧼 Style & Formatting Guidelines
+
+* Use clear, concise language
+* Prefer active voice
+* Use code blocks (` ```js `) for code
+* Include screenshots where helpful
+* Break long sections into logical headings
+* Use Markdown best practices (headings, lists, links)
+
+---
+
+## ✅ License
+
+This project is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
+
+---
+
+*Thank you for helping make the Hubs documentation better!*
 
