@@ -110,7 +110,7 @@ The models from Google Poly are available, and newer ones can be uploaded.
 The Poly models lean toward low-poly and small textures, and usually perform well.
 
 The search function in Spoke filters for GLTF/GLB files of no more than medium complexity and a license that allows remixing.
-Thus, some models won't be displayed, that can be found searching [Icosa Gallery](https://icosa.gallery/) directly.
+Thus, some models  that can be found when searching [Icosa Gallery](https://icosa.gallery/) directly won't be displayed here.
 
 #### Bing Images
 > This has not yet been implemented for Hubs Cloud Community Edition.
