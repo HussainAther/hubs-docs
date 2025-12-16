@@ -100,7 +100,7 @@ Sketchfab is an online marketplace for 3D models. It contains a wide variety of 
 Under the “Collections” tab, you'll find models designed to be used with Hubs.
 You can also search for “game ready”, “low-poly”, or “Mozilla Hubs” to find a number of optimized models.
 
-Models that can't be downloaded, or have too many faces to perform well, are not listed.
+Models that can't be downloaded, or have too many polygons to perform well, are not listed.
 
 > 💡The administrator of your instance must have generated an API key, and configured the instance with it, for this to work.
 
