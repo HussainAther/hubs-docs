@@ -42,7 +42,7 @@ We estimate that proficient users might get this done in 45 minutes to 2 hours. 
 
 We estimate $1 USD per year for the first year of a domain and ~$5 USD for renewals each year.  ~$38 USD per month minimum for the services at DigitalOcean (this will include 1 node - $24 USD, 1 load balancer - $12 USD, and ~$2 USD for storage, one dollar for each 10 Gi volume). Your email SMTP service might be free or might cost a small amount of money ($1-$5 USD per month). It might be safe to estimate $40 USD per month.
 
-You may be charged [additional taxes](https://docs.digitalocean.com/platform/billing/taxes/) depending on your location.
+You may be charged [additional taxes](https://docs.digitalocean.com/platform/billing/taxes/) depending on your location.  For example, it might be safe to estimate a total of $48 for [customers with a tax location in the United Kingdom](https://docs.digitalocean.com/platform/billing/taxes/gbr/)
 
 ### Got questions?
 
