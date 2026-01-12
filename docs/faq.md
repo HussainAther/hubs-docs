@@ -63,11 +63,6 @@ You might need to either fight with your cookies to get that worked out OR just 
 
 ## **DigitalOcean**
 
-### Why do the instructions say US$38 per month minimum?
-
-DigitalOcean’s single node option is US$24 per month. They also charge a mandatory extra US$12 per month for load balancing. Plus $2 per month for 10 Gigabytes of data storage. So $24 plus $12 plus $2 equals $38.
-
-You may be charged [additional taxes](https://docs.digitalocean.com/platform/billing/taxes/) depending on your location. For example, "[customers with a tax location in the United Kingdom](https://docs.digitalocean.com/platform/billing/taxes/gbr/)" will be charged the VAT of an additional 20% which makes the monthly price equivalent to approximately $46 USD.
 
 ### Can I select a lower price, smaller vCPU Node plan with DigitalOcean?
 
