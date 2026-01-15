@@ -64,7 +64,7 @@ You might need to either fight with your cookies to get that worked out OR just 
 ## **DigitalOcean**
 
 
-### Can I select a lower price, smaller vCPU Node plan with DigitalOcean?
+### Can I select a lower price smaller vCPU Node plan with DigitalOcean?
 
 If you plan to use Hubs to host large groups, we recommend that you stick with our recommended 4GB total RAM / 2 vCPUs Node plan. So the short answer is no, you cannot currently select a lower price plan with DigitalOcean.
 
