@@ -64,11 +64,54 @@ You might need to either fight with your cookies to get that worked out OR just 
 ## **DigitalOcean**
 
 
-### Can I select a lower price smaller vCPU Node plan with DigitalOcean?
+### Can I select a lower price, smaller RAM/vCPU Node plan with DigitalOcean?
 
-If you plan to use Hubs to host large groups, we recommend that you stick with our recommended 4GB total RAM / 2 vCPUs Node plan. So the short answer is no, you cannot currently select a lower price plan with DigitalOcean.
+If you plan to use Hubs to host any size other than really, really small groups (e.g. 2-3 users), we recommend that you stick with our recommended 4GB total RAM / 2 vCPUs Node plan. So the short answer is no, you cannot currently select a lower price plan with DigitalOcean.
 
-However, we have done some limited testing regarding CPUs so as of December 2025. We found that 3 GB RAM plans with _other hosting providers_ will work, especially if you plan to use Hubs to host small groups.  DigitalOcean does not currently offer a 3 GB RAM plan.  If your provider does offer 3 GB RAM, you can give it a try. Be aware that your mileage may vary.
+However, we have done some limited testing regarding RAM and CPUs as of December 2025. We found that less than 4 GB of RAM _should_ work, especially if you plan to use Hubs to host really small groups. If your provider does offer less than 4 GB RAM, you can give it a try. Be aware that your mileage may vary. See the [next FAQ](#what-is-the-resource-usage-of-my-digitalocean-kubernetes-node-in-real-world-situations) for real world data.
+
+### What is the resource usage of my DigitalOcean Kubernetes Node in real world situations?
+
+Note: the metrics are provided by metrics-server
+
+#### CPU/RAM usage for the entire node
+
+idle usage (no users - cache cleared beforehand for more accurate RAM reporting):
+| Used millicores | Used RAM |
+| --------------: | -------: |
+|            112m |   1513Mi |
+
+Moderate usage (14 users):
+| Used millicores | Used RAM |
+| --------------: | -------: |
+|            211m |   2646Mi |
+
+Note: the resource usage for the Node doesn't correspond to the total resources used by all the Hubs pods, there is additional overhead from other pods (unrelated to Hubs), as well as (presumably) Kubernetes itself and the host system that Kubernetes is running on.
+
+#### Pod CPU usage
+Note: for the entries with users, the users' avatars were all low resource avatars and coexisted in the same room.
+
+| Pod                     | Used millicores |
+| :---------------------- | --------------: |
+| coturn: idle            |              1m |
+| coturn: 14 users        |              1m |
+| dialog: idle            |              3m |
+| dialog: 14 users        |             42m |
+| dialog: 22 users        |            114m |
+| hubs: idle              |              2m |
+| hubs: 14 users          |              3m |
+| nearspark: idle         |              1m |
+| nearspark: 14 users     |              1m |
+| pgbouncer: idle         |              1m |
+| pgbouncer-t: idle       |              1m |
+| pgsql: idle             |              1m |
+| photomnemonic: idle     |              1m |
+| photomnemonic: 14 users |              1m |
+| reticulum: idle         |             12m |
+| reticulum: 14 users     |             39m |
+| reticulum: 21 users     |            213m |
+| spoke: idle             |              3m |
+| spoke: 14 users         |              3m |
 
 ### I don’t see my $200 credit on my account with DigitalOcean.
 
