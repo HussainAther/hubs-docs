@@ -320,7 +320,7 @@ g. For Node plan: Select **$24/month per node** ($0.036/hour) of 4GB total RAM /
 > 💡 Tip: DigitalOcean charges an extra $12/month for mandatory load balancing.<br>
 So a $24 choice here will be $24 + $12 a month for a total of $36 a month.
 
-> 🤔 Advice: If you are using another hosting service that is *not* DigitalOcean, see our FAQ [Can I select a lower price, smaller vCPU Node plan with DigitalOcean?](https://docs.hubsfoundation.org/beginners-guide-to-CE.html#Can-I-select-a-lower-price-smaller-vCPU-Node-plan-with-DigitalOcean) for our advice about selecting node and memory plans.
+> 🤔 Advice: See our FAQ [Can I select a lower price, smaller RAM/vCPU Node plan with DigitalOcean?](./faq.md#can-i-select-a-lower-price-smaller-ramvcpu-node-plan-with-digitalocean) for our further advice about selecting node and memory plans.
 
 h. For Nodes: Select **the negative sign to reduce this from 3 to 1**.
 
