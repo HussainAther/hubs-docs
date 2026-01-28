@@ -19,7 +19,7 @@ These instructions are written for users, newbies, or non-developers. This Hubs 
 
 This Hubs build at DO supports 30-60 maximum concurrent users. Of course, heavy concurrent use *can* lower that number. YMMV
 
-The cost is $38 USD per month minimum, plus ~$1 USD annual for the first year domain (August 2025 prices).
+The cost is $38 USD per month minimum, plus ~$1 USD annual for the first year domain (August 2025 prices). [Additional taxes](https://docs.digitalocean.com/platform/billing/taxes/) may be added depending on your location. For example, "[customers with a tax location in the United Kingdom](https://docs.digitalocean.com/platform/billing/taxes/gbr/)" will be charged the VAT of an additional 20% which makes the monthly price equivalent to approximately $46 USD.
 
 Scaleway provides you magic link log-in emails (SMTP), and Porkbun provides a web domain with DNS service.
 
@@ -41,6 +41,8 @@ We estimate that proficient users might get this done in 45 minutes to 2 hours. 
 ### How much will this cost?
 
 We estimate $1 USD per year for the first year of a domain and ~$5 USD for renewals each year.  ~$38 USD per month minimum for the services at DigitalOcean (this will include 1 node - $24 USD, 1 load balancer - $12 USD, and ~$2 USD for storage, one dollar for each 10 Gi volume). Your email SMTP service might be free or might cost a small amount of money ($1-$5 USD per month). It might be safe to estimate $40 USD per month.
+
+You may be charged [additional taxes](https://docs.digitalocean.com/platform/billing/taxes/) depending on your location.  For example, it might be safe to estimate a total of $48 for [customers with a tax location in the United Kingdom](https://docs.digitalocean.com/platform/billing/taxes/gbr/)
 
 ### Got questions?
 
@@ -317,6 +319,8 @@ g. For Node plan: Select **$24/month per node** ($0.036/hour) of 4GB total RAM /
 
 > 💡 Tip: DigitalOcean charges an extra $12/month for mandatory load balancing.<br>
 So a $24 choice here will be $24 + $12 a month for a total of $36 a month.
+
+> 🤔 Advice: See our FAQ [Can I select a lower price, smaller RAM/vCPU Node plan with DigitalOcean?](./faq.md#can-i-select-a-lower-price-smaller-ramvcpu-node-plan-with-digitalocean) for our further advice about selecting node and memory plans.
 
 h. For Nodes: Select **the negative sign to reduce this from 3 to 1**.
 
@@ -660,7 +664,7 @@ kubectl -n hcce get svc lb
 
 ![Capture from VS Code, terminal window. Text "kubectl -n hcce get svc lb" entered. Resulting "EXTERNAL-IP" is highlighted with text "Copy and save".](img/beginnersguide/image86.png)
 
-g. For EXTERNAL-IP, **copy and save** the number string Terminal window
+g. For EXTERNAL-IP, **copy and save** the number string in the Terminal window
 
 h. ☑️ [Extra instructions to check that your SMTP email is working](./faq.html#checking-that-my-smtp-is-reachable-from-my-kubernetes-cluster).
 
