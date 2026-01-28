@@ -76,7 +76,7 @@ Note: the metrics are provided by metrics-server
 
 #### CPU/RAM usage for the entire node
 
-idle usage (no users - cache cleared beforehand for more accurate RAM reporting):
+Minimum resource usage to run Hubs (no users - cache cleared beforehand for more accurate RAM reporting):
 | Used millicores | Used RAM |
 | --------------: | -------: |
 |            112m |   1513Mi |
