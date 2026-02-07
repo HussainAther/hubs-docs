@@ -18,6 +18,9 @@ You can easily upgrade your Starter Hub to a paid plan at any time. The easiest 
 
 [<img src="img/upgrade-button.png" alt="The subscription dashboard">](./spoke-creating-projects.html
 )
+You can easily upgrade your Starter Hub to a paid plan at any time. The easiest way is through the Upgrade button on the subscription dashboard, which will then follow the same process as [creating a new paid subscription](./setup-creating.html#how-to-subscribe---paid-plans).
+
+[<img src="img/upgrade-button.png" alt="The subscription dashboard">](./setup-creating.html#how-to-subscribe---paid-plans)
 
 ## Cancelling Your Subscription
 
