@@ -7,7 +7,7 @@ description: Details the ways you can add content to your Hubs instance.
 
 The two forms of content you can import into Community Edition are **avatars** and **scenes**. Avatars are 3D figures like robots, humans, and ducks that can be worn by visitors to represent themselves, and scenes are 3D environments like interiors and landscapes that provide visual grounding for a room.
 
-You can import any custom content you've created, either on [demo.hubsfoundation.org](https://demo.hubsfoundation.org), or using the tools like the [Scene Editor](./admin-enable-scene-editor) available on your hub. For more information about the Scene Editor, see [Spoke Documentation](./spoke-creating-projects.md)[^1].
+You can import any custom content you've created, either on [demo.hubsfoundation.org](https://demo.hubsfoundation.org), or using the tools like the [Scene Editor](./admin-enable-scene-editor.html) available on your hub. For more information about the Scene Editor, see [Spoke Documentation](./spoke-creating-projects.md)[^1].
 
 ## Admin Import Tool
 
