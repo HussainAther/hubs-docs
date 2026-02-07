@@ -22,15 +22,15 @@ Now that your site is up and running, you can create a room by clicking on the "
 
 ![Hubs Cloud Create Room](img/hubs-cloud-create-room.jpeg)
 
-The first thing you'll notice... is your room is totally empty! Hubs Cloud isn't very useful until you [import some scenes and avatars](./hubs-cloud-importing-content.md).
+The first thing you'll notice... is your room is totally empty! Hubs Cloud isn't very useful until you [import some scenes and avatars](./hubs-cloud-importing-content.html).
 
 ## Setting up your hub
 
 Here's some things you can do to continue setting up your hub:
 
-- [Import content](./hubs-cloud-importing-content.md) so your visitors will have access to a library of scenes and avatars.
-- [Customize the Look and Feel](./hubs-cloud-customizing-look-and-feel.md) to make your hub fit your brand or style.
-- [Enable the Scene Editor](./hubs-cloud-enable-scene-editor.md) to let visitors create their own scenes.
-- [Enable permissive rooms](./hubs-cloud-permissive-rooms.md) to let visitors add media to their rooms.
-- [Learn how to manage content](./hubs-cloud-managing-content.md) so visitors can contribute content to your hub.
-- [Add Administrators](./hubs-cloud-adding-administrators.md) if you'd like others to help you set up your hub.
+- [Import content](./hubs-cloud-importing-content.html) so your visitors will have access to a library of scenes and avatars.
+- [Customize the Look and Feel](./hubs-cloud-customizing-look-and-feel.html) to make your hub fit your brand or style.
+- [Enable the Scene Editor](./hubs-cloud-enable-scene-editor.html) to let visitors create their own scenes.
+- [Enable permissive rooms](./hubs-cloud-permissive-rooms.html) to let visitors add media to their rooms.
+- [Learn how to manage content](./hubs-cloud-managing-content.html) so visitors can contribute content to your hub.
+- [Add Administrators](./hubs-cloud-adding-administrators.html) if you'd like others to help you set up your hub.

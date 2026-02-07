@@ -6,9 +6,9 @@ sidebar_label: Adding Administrators
 
 Administrators for your hub have full access rights. They can:
 
-- Have access to the [Admin Console](./hubs-cloud-getting-started.md) to update system settings and app configuration.
-- [Manage the content library](./hubs-cloud-managing-content.md) and [import content](./hubs-cloud-importing-content.md).
-- Have access to the [Scene Editor](./spoke-creating-projects.md) to create and publish new scenes, regardless of settings.
+- Have access to the [Admin Console](./hubs-cloud-getting-started.html) to update system settings and app configuration.
+- [Manage the content library](./hubs-cloud-managing-content.html) and [import content](./hubs-cloud-importing-content.html).
+- Have access to the [Scene Editor](./spoke-creating-projects.html) to create and publish new scenes, regardless of settings.
 
 To assign other accounts administrative access, you need to get their account id and then assign administrator rights in the Admin Console.
 

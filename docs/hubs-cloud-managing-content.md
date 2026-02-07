@@ -12,7 +12,7 @@ However, as the administrator of a hub, you don't always want the content contri
 
 When a visitor creates a custom avatar or scene, they are offered the option to mark it as *remixable* and/or *promotable*. *Remixable* content confers a Creative Commons 3 license to the content so others are free to use or modify it, and *promotable* content will be enqueued for review to be added to your hub's content library. Once it is approved, content in the library can be discovered by users through tools like the Media Browser.
 
-All content marked as *Promotable* will be added to the **Pending Scene/Avatar Queue** when it is either created or updated. You can find these queues in your [Admin Console](./hubs-cloud-getting-started.md):
+All content marked as *Promotable* will be added to the **Pending Scene/Avatar Queue** when it is either created or updated. You can find these queues in your [Admin Console](hubs-cloud-getting-started):
 
 ![Hubs Cloud Pending Queue Menu](img/hubs-cloud-pending-queue-menu.jpeg)
 
