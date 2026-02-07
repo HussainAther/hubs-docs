@@ -9,7 +9,7 @@ Some developer-oriented options that are not available in the preferences panel 
 Examples:
 ```
 https://mydomain.com/12345/my-room-name?allow_multi
-https://localhost:8080/?hub_id=12345&allow_multi
+https://example.com/?hub_id=12345&allow_multi
 ```
 
 - `allow_multi` - Allow multiple instances off the app in the same browser session
